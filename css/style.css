@@ -1,0 +1,339 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 50px 100px;
+    font-size: 0.8em;
+    line-height: 20px;
+    font-family: "Trebuchet MS", Arial;
+    border: 1px solid #666;
+    background: #191919;
+    color: black;
+}
+
+a {
+    color: #018BC1;
+}
+
+a:hover {
+    color: #333;
+}
+
+#header {
+    background: url(../images/header_bckg.jpg) no-repeat top right #000;
+}
+
+#logo {
+    padding: 30px 0 0 40px;
+    height: 75px;
+    color: #fff;
+}
+
+#logo a {
+    color: #01b0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#menu {
+    background: #01b0f0;
+    height: 30px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #e8e8e8;
+}
+
+#menu ul {
+    margin: 1px
+}
+
+#menu ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    border-right: 1px solid #59d2fe;
+    padding: 0 20px;
+}
+
+#menu ul li:hover {
+    height: 26px;
+    border-bottom: 4px solid #ccf91A;
+}
+
+#menu a {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 4px;
+}
+#menu a span {
+    color: yellow;
+}
+
+#menu a:hover {
+    padding-top: 4px;
+    /*height: 22px;*/
+    /*border-bottom: 4px solid #ccf91A;*/
+}
+
+#text {
+    margin: 0 305px 0 20px;
+    min-height: 100%;
+}
+
+#text p, .center-content p, #preview-vhost {
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+    background-color: #f5f5f5;
+    margin-right: 20px;
+}
+
+#preview-vhost {
+    font-family: 'Consolas', 'Console', 'Monoscope', 'Courier New';
+}
+
+#text li, .center-content li {
+    list-style: none;
+    padding-left: 20px;
+    background: url(../images/li.gif) no-repeat 0px 7px;
+}
+
+#sidebar {
+    border-left: 1px solid #d7d7d7;
+    float: right;
+    width: 250px;
+    padding: 0 20px 180px 10px;
+}
+
+/* my changes */
+.right-links {
+    list-style: none;
+}
+
+.right-links li:last-child {
+    border-bottom: 1px solid #d7d7d7;
+}
+.right-links li {
+    border-top: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    background: #f5f5f5;
+    margin-left: -51px;
+    padding: 10px 20px;
+}
+.right-links li:hover {
+    background: #e9e9e9;
+}
+.right-links a {
+    text-decoration: none;
+    height: 50px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    color: #000;
+}
+
+#main {
+    float: left;
+    background: #fff;
+    padding: 20px 0 0 0;
+}
+
+#footer {
+    background: url(../images/footer_bckg.jpg) #424e4f;
+    height: 102px;
+    clear: both;
+}
+
+#left_footer {
+    float: left;
+    padding: 40px 0 0 30px;
+    color: #fff;
+    font-size: 12px;
+}
+
+#left_footer a {
+    color: #fff;
+}
+
+#left_footer a:hover {
+    text-decoration: none;
+}
+
+#right_footer {
+    float: right;
+    padding: 40px 30px 0 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
+
+#right_footer a {
+    color: #fff;
+}
+
+#right_footer a:hover {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+}
+
+.center-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+/* login page */
+.center-content {
+    width: 100%;
+    padding: 10px;
+}
+
+.login-table {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-from {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* input form */
+
+input[type=text], input[type=password], input[type=submit], input[type=button], textarea {
+    border: 1px solid #6c8fff;
+    margin: 3px;
+    background: white;
+    color: black;
+}
+textarea {
+    background: white !important;
+}
+input[type=submit], input[type=button] {
+    background: #01b7f8;
+    cursor: pointer;
+    padding: 3px 10px;
+    color: black;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+    background: #b4e7ff;
+}
+
+.hint {
+    color: #717171;
+    margin-left: 30px;
+}
+
+.spoiler-title {
+    margin: 10px;
+    cursor: pointer;
+}
+.spoiler-title h1:before {
+    content: "»";
+    color: #858585;
+}
+.spoiler-title:hover h1 {
+    color: #5a6b6c;
+}
+.spoiler-body {
+    border: 1px solid #dddddd;
+    background: #f6f6f6;
+    padding-left: 5px;
+}
+
+.edit-vhost strong {
+    margin-left: 50px;
+}
+
+table.host-list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.host-list tr{
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+}
+
+td.host-list {
+    padding: 3px;
+}
+
+.host-list td:nth-child(1) {
+    padding-left: 10px;
+}
+
+a.host-enabled {
+    font-weight: bold;
+}
+a.host-disabled {
+    text-decoration: none;
+    color: #a9a9a9;
+}
+
+.host-list tr:nth-child(2n) {
+    background: #eeeeee;
+}
+
+.host-list tr:hover {
+    background: #eaf0ff;
+}
+
+td.icon-cell {
+    width: 20px;
+}
+
+td.icon-cell img:hover {
+    opacity: 0.5;
+}
+
+.loading-box {
+    display: none;
+}
+
+.loading-box .bg-blank {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+.loading-box .front-message {
+    background: #ededed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin-left: -100px;
+    margin-top: -50px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #666666;
+    box-shadow: 0px 0px 20px #7596ff;
+}

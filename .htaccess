@@ -1,0 +1,6 @@
+Options -Indexes
+Options +FollowSymLinks -MultiViews
+ErrorDocument 404 /404.php
+#RewriteEngine On
+#RewriteRule ^/([\w\d_-]+)/([\w\d_-]+)/(\d+).* index.php?controller=$1&act=$2&$id=$3
+#RewriteRule ([\d]+) index.php?id=$1 [L]
