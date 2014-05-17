@@ -83,14 +83,3 @@ $(document).ready(function(){
         });
     });
 });
-
-/*
- <VirtualHost *:80>
- ServerName test3.dev
-
- <Location />
- ProxyPass http://www.youtube.com/
- ProxyPassReverse http://www.youtube.com/
- </Location>
- </VirtualHost>
- */

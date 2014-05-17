@@ -1,7 +1,8 @@
 <? include $_SERVER['CONTEXT_DOCUMENT_ROOT'] . '/lib/controller.php'?>
 <!DOCTYPE html>
 <!--
-Author: Reality Software
+Layout Author: Reality Software
+Developer: https://github.com/napalm128
 Website: http://www.realitysoftware.ca
 Note: This is a free template released under the Creative Commons Attribution 3.0 license,
 which means you can use it in any way you want provided you keep the link to the author intact.
@@ -21,12 +22,12 @@ which means you can use it in any way you want provided you keep the link to the
         <br />ХНУ</div>
     <div id="menu">
         <ul>
-            <li><a href="/">Головна</a></li>
+            <li <? if ($_SERVER['REQUEST_URI'] == '/') echo 'class="active"'; ?> ><a href="/">Головна</a></li>
             <? if (@$_SESSION['login'] != 'admin') { ?>
                 <li><a href="/about">Про сайт</a></li>
-                <li><a href="/admin/login">Вхід</a></li>
+                <li <? if ($_SERVER['REQUEST_URI'] == '/admin/login/') echo 'class="active"'?> ><a href="/admin/login">Вхід</a></li>
             <? } else { ?>
-                <li><a href="/admin/hosts">Хости</a></li>
+                <li <? if ($_SERVER['REQUEST_URI'] == '/admin/hosts/') echo 'class="active"'?> ><a href="/admin/hosts">Хости</a></li>
                 <li><a href="/about">Про сайт</a></li>
                 <li><a href="/admin/logout">Вихід <span><?= $_SESSION['login']?></span></a></li>
             <? } ?>
