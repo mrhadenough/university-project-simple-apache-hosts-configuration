@@ -59,7 +59,7 @@ Example:
 <Directory />
 	Options FollowSymLinks
 	AllowOverride All
-	Require all denied
+	Require all granted
 </Directory>
 
 <Directory /usr/share>
