@@ -10,11 +10,13 @@ which means you can use it in any way you want provided you keep the link to the
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>СИСТЕМА КОНТРОЛЮ ВІРТУАЛЬНИХ ХОСТІВ</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="/js/jquery-2.1.0.min.js"></script>
-    <script src="/js/default.js"></script>
+    <?/*
+    <link href="/css/style.min.css" rel="stylesheet" type="text/css" />
+    <script async src="/js/jquery-2.1.0.min.js"></script>
+    <script async src="/js/default.js"></script>
+    */?>
 </head>
-<body>
+<body onload="doFirst()">
 <!-- header -->
 <div id="header">
     <div id="logo"><a href="#">Система контролю віртуальних хостів</a>
