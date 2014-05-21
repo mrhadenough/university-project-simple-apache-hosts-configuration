@@ -37,7 +37,7 @@ input[type=submit],input[type=button]{background:#01b7f8;cursor:pointer;color:#0
 input[type=submit]:hover,input[type=button]:hover{background:#b4e7ff}
 .hint{color:#717171;margin-left:30px}
 .spoiler-title{cursor:pointer;margin:10px}
-.spoiler-title h1:before{content:"»";color:#858585}
+.spoiler-title h1:before{content:"Â»";color:#858585}
 .spoiler-title:hover h1{color:#5a6b6c}
 .spoiler-body{border:1px solid #ddd;background:#f6f6f6;padding-left:5px}
 .edit-vhost strong{margin-left:50px}
