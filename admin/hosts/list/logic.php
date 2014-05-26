@@ -9,7 +9,7 @@ if (isset($_REQUEST['act']) && isset($_REQUEST['name'])) {
     if (!in_array($act, $methods))
         die();
 
-    $name = $_REQUEST['name'];
+   $name = str_replace(array('.', '/', "\\"), "", $_REQUEST['name']);
 
     $f = fopen($_SERVER['DOCUMENT_ROOT'] . "/tmp/hosts_$act/$name.conf",'w');
     fclose($f);
