@@ -54,6 +54,7 @@ while true; do
       rm /etc/apache2/sites-available/$i
       rm $hosts_remove/$i
     done
+    service apache2 reload
   fi
   
   # enable host
@@ -63,6 +64,7 @@ while true; do
       a2ensite $i
       rm $hosts_enable/$i
     done
+    service apache2 reload
   fi
   
   # disable host
@@ -72,6 +74,7 @@ while true; do
       a2dissite $i
       rm $hosts_disable/$i
     done
+    service apache2 reload
   fi
   
   sleep 10;
