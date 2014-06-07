@@ -13,7 +13,7 @@ a:hover{color:#333}
 #menu a span{color:#FF0}
 #menu a:hover{padding-top:4px}
 #text{min-height:100%;margin:0 305px 0 20px}
-#text p,.center-content p,#preview-vhost{border:1px solid #d7d7d7;background-color:#f5f5f5;margin-right:20px;padding:10px}
+#text p,.center-content p, #preview-vhost, .success-message {border:1px solid #d7d7d7;background-color:#f5f5f5;margin-right:20px;padding:10px}
 .success-message {background: #EAFFDF}
 #preview-vhost{font-family:Consolas, Console, Monoscope, 'Courier New'}
 #text li,.center-content li{list-style:none;padding-left:20px;background:url(../images/li.gif) no-repeat 0 7px}
