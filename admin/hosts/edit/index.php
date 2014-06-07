@@ -4,6 +4,12 @@
     <? include $_SERVER['CONTEXT_DOCUMENT_ROOT'] . '/admin/hosts/menu.php'?>
 </div>
 <div id="text" >
+    <? if (isset($_SESSION['success_message'])) { ?>
+        <p class="success-message">
+            <?= $_SESSION['success_message']?>
+        </p>
+        <? unset($_SESSION['success_message'])?>
+    <? } ?>
     <h1><strong>Редагування віртуального хосту</strong></h1>
     <form action="" method="post" class="edit-host">
         <input type="hidden" name="act" value="addHost" /><br>

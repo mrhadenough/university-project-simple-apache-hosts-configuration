@@ -39,5 +39,5 @@ if (isset($_REQUEST['act']) && $_REQUEST['act'] == 'addHost' && isset($_REQUEST[
     $f = fopen($_SERVER['DOCUMENT_ROOT'] . "/tmp/hosts_add/$name.conf",'w');
     fwrite($f, $_REQUEST['config']);
     fclose($f);
-    echo '<p class="success-message">News setting has been saved</p>';
+    $_SESSION['success_message'] = 'New setting has been saved';
 }
