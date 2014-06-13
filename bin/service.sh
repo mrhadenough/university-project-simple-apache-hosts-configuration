@@ -1,9 +1,9 @@
 #!/bin/bash
 # this script has been created by Shulyak Constantine
-# It is simple apache service to manage virtual hosts
+# It is simple apache service for manage virtual hosts
 # It should be run by root user to get important permissions
 # Default script location is HTTP_DOC/bin
-# All necessary folders it will create automatically
+# All necessary folders will be created automatically
 
 dir="../tmp"
 hosts_add="./hosts_add"
